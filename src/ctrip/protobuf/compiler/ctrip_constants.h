@@ -1,0 +1,7 @@
+#ifndef CTRIP_CONSTANTS_H__
+#define CTRIP_CONSTANTS_H__
+
+#define JAVA_CODE_GENERATOR_VERSION          "PB-1.0.0"
+#define CSHARP_CODE_GENERATOR_VERSION        "PB-1.0.0"
+
+#endif

@@ -1,0 +1,10 @@
+syntax="proto2";
+
+package soa.service;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.ServiceOptions {
+  optional string name = 1200;
+  optional string namespace = 1201;
+}

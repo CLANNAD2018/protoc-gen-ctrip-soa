@@ -1,0 +1,24 @@
+syntax="proto2";
+
+package hello;
+
+import "soa.service.proto";
+
+message HelloRequest {
+    required string name = 1;
+}
+
+message HelloResponse {
+    required string result = 1;
+}
+
+service HelloService {
+    
+    option (soa.service.name) = "HelloService";
+    option (soa.service.namespace) = "http://soa.ctrip.com/framework/soa/helloservice/1}";
+    
+    // Sends a greeting
+    rpc SayHello (HelloRequest) returns (HelloResponse);
+    // Sends another greeting
+    rpc SayHelloAgain (HelloRequest) returns (HelloResponse);
+}
